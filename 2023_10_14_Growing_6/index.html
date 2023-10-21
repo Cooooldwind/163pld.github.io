@@ -18,16 +18,16 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8742 的题解这一题是经典的“01背包”题，非常适合新手练手。 刚学完的来做做此题会有意想不到的效果。  思路正如上面所述，这是能载入史册的经典的“01背包”题，适合刚入门的同学们做。 所以说，如何“01”">
+        <meta name="description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。  这里是P8742 的题解这一题是经典的“01背包”题，非常适合新手练手。 刚学完的来做做此题会有意想不到的效果。  思路正如上面所述，这是能载入史册的经典的“01背包”题，适合刚入门的同学们做。 所以说，如何“01">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CooooldWind_の试炼历程 (6)">
 <meta property="og:url" content="http://cooooldwind.github.io/2023_10_14_Growing_6/index.html">
 <meta property="og:site_name" content="CooooldWind_的小站">
-<meta property="og:description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8742 的题解这一题是经典的“01背包”题，非常适合新手练手。 刚学完的来做做此题会有意想不到的效果。  思路正如上面所述，这是能载入史册的经典的“01背包”题，适合刚入门的同学们做。 所以说，如何“01”">
+<meta property="og:description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。  这里是P8742 的题解这一题是经典的“01背包”题，非常适合新手练手。 刚学完的来做做此题会有意想不到的效果。  思路正如上面所述，这是能载入史册的经典的“01背包”题，适合刚入门的同学们做。 所以说，如何“01">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/7jruysmk.png">
 <meta property="article:published_time" content="2023-10-14T06:45:00.000Z">
-<meta property="article:modified_time" content="2023-10-21T13:38:01.929Z">
+<meta property="article:modified_time" content="2023-10-21T15:34:49.277Z">
 <meta property="article:author" content="CooooldWind_">
 <meta property="article:tag" content="题解">
 <meta property="article:tag" content="CooooldWind_の试炼历程">
@@ -314,8 +314,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-21 21:38:01</span>
-            <span class="mobile">2023-10-21 21:38:01</span>
+            <span class="desktop">2023-10-21 23:34:49</span>
+            <span class="mobile">2023-10-21 23:34:49</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -358,13 +358,14 @@
 
         <div class="article-content markdown-body">
             <h1 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h1><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
+<hr>
 <h2 id="这里是P8742的题解"><a href="#这里是P8742的题解" class="headerlink" title="这里是P8742的题解"></a>这里是<a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8742" >P8742 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的题解</h2><p>这一题是经典的“01背包”题，非常适合新手练手。</p>
 <p>刚学完的来做做此题会有意想不到的效果。</p>
 <hr>
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>正如上面所述，这是能载入史册的经典的“01背包”题，适合刚入门的同学们做。</p>
 <p>所以说，如何“01”呢？</p>
 <p>二维数组“01”，第 $i$ 行第 $j$ 列表示能否为前 $i$ 个砝码中做出选或者不选的抉择，从而使选的砝码加起来重量为 $j$ 。</p>
-<p>x #include<bits/stdc++.h>using namespace std;​int n,m,h[500],road[500][500];​int main(){    cin &gt;&gt; n &gt;&gt; m;    for(int i = 1;i &lt;= n;i++) cin &gt;&gt; h[i];    for(int i = 0;i &lt; m;i++){        int f,t;        cin &gt;&gt; f &gt;&gt; t;                //高处？低处？        if(h[f] &gt; h[t]) road[f][t] = 1;        else if(h[t] &gt; h[f]) road[t][f] = 1;    }    for(int i = 1;i &lt;= n;i++){        road[i][i] = 1;//水在自己家        int judge = 0;        for(int j = 1;j &lt;= n;j++)            for(int k = 1;k &lt;= n;k++){                if(road[k][j]){//有路，则为1                    judge++;                    break;                }            }               if(judge == n){            cout &lt;&lt; “Oui, j’ai trouve la solution.” &lt;&lt; endl &lt;&lt; i;            return 0;        }        road[i][i] = 0;    }    cout &lt;&lt; “Non”;    return 0;}cpp</p>
+<p>“01背包”的精髓还是关于状态转移方程 <strong>（以下简称状转）</strong>。那么本题的状转就是：</p>
 <ol>
 <li>不放砝码，即上面的方案都能用。</li>
 <li>只放现在的那个。</li>
@@ -390,8 +391,7 @@
 <p>这个时候就可以给你们看代码了。</p>
 <div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>;j &lt;= w_max;j++)&#123;</span><br><span class="line">		dp[i][j] = dp[i - <span class="number">1</span>][j];</span><br><span class="line">		<span class="keyword">if</span>(w[i] == j) dp[i][j] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(dp[i - <span class="number">1</span>][j + w[i]] == <span class="number">1</span>) dp[i][j] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(dp[i - <span class="number">1</span>][<span class="built_in">abs</span>(j - w[i])] == <span class="number">1</span>) dp[i][j] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(dp[i][j] == <span class="number">1</span> &amp;&amp; i == n) ans++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <p>双重循环，遍历dp。</p>
-<p>第 $i$ 个砝码是否为 $j$ ，这是第一个 if 判断：“ <code>if(w[i] == j) dp[i][j] = 1;</code> ”的内容。</p>
-<p>从前 $i$ 个砝码里面选择其中任意 $\{x|0≤x≤i\}$ 的重量能否组成 $j + w_i$ 或者 $|j- w_i|$ ，其实就是放左边放右边的问题，这是第二、三个if判断：<br><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(dp[i - <span class="number">1</span>][j + w[i]] == <span class="number">1</span>) dp[i][j] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(dp[i - <span class="number">1</span>][<span class="built_in">abs</span>(j - w[i])] == <span class="number">1</span>) dp[i][j] = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></div><br>的内容。</p>
+<p>第 $i$ 个砝码是否为 $j$ ，这是第一个 if 判断：“<br><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">的内容。</span><br><span class="line"></span><br><span class="line">从前 $i$ 个砝码里面选择其中任意 $\&#123;x|0≤x≤i\&#125;$ 的重量能否组成 $j + w_i$ 或者 $|j- w_i|$ ，其实就是放左边放右边的问题，这是第二、三个if判断：</span><br><span class="line">```cpp</span><br><span class="line">else if(dp[i - 1][j + w[i]] == 1) dp[i][j] = 1;</span><br><span class="line">else if(dp[i - 1][abs(j - w[i])] == 1) dp[i][j] = 1;</span><br></pre></td></tr></table></figure></div><br>的内容。</p>
 <p>第四个：“<code>if(dp[i][j] == 1 &amp;&amp; i == n) ans++;</code> ”是特判，当判断最后一行时就可以算总数了。</p>
 <p>我们可以把上面三个 if 组合一下，变成：</p>
 <div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dp[i][j] = dp[i - <span class="number">1</span>][j] || w[i] == j || dp[i - <span class="number">1</span>][j + w[i]] || dp[i - <span class="number">1</span>][<span class="built_in">abs</span>(j - w[i])];</span><br></pre></td></tr></table></figure></div>
@@ -417,7 +417,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-10-21 21:38:01
+                    :</strong> 2023-10-21 23:34:49
             </li>
         
         <li>
