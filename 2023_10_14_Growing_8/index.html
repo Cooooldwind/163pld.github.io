@@ -26,7 +26,7 @@
 <meta property="og:description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8813的题解思路模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻 答案12345678910111213#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;i">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-14T06:45:00.000Z">
-<meta property="article:modified_time" content="2023-10-22T05:08:20.928Z">
+<meta property="article:modified_time" content="2023-10-22T05:12:35.212Z">
 <meta property="article:author" content="CooooldWind_">
 <meta property="article:tag" content="题解">
 <meta property="article:tag" content="CooooldWind_の试炼历程">
@@ -321,8 +321,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-22 13:08:20</span>
-            <span class="mobile">2023-10-22 13:08:20</span>
+            <span class="desktop">2023-10-22 13:12:35</span>
+            <span class="mobile">2023-10-22 13:12:35</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -388,7 +388,7 @@
 
 
         <div class="article-content markdown-body">
-            <h1 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h1><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
+            <h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
 <h2 id="这里是P8813的题解"><a href="#这里是P8813的题解" class="headerlink" title="这里是P8813的题解"></a>这里是<a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8813" >P8813</a>的题解</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻</p>
 <h3 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">long</span> <span class="type">long</span> a,b,c = <span class="number">1</span>; cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; b;i++)</span><br><span class="line">		<span class="keyword">if</span>(c &gt; <span class="number">1000000000</span>)&#123;</span><br><span class="line">			cout &lt;&lt; <span class="number">-1</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> c *= a;</span><br><span class="line">	cout &lt;&lt; c;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <h3 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h3><h4 id="1：开long-long"><a href="#1：开long-long" class="headerlink" title="#1：开long long"></a>#1：开long long</h4><p>long long防爆的，最大是$2^6$$^4$。</p>
@@ -407,7 +407,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2023-10-22 13:08:20
+                    :</strong> 2023-10-22 13:12:35
             </li>
         
         <li>
@@ -535,7 +535,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">CooooldWind_の试炼历程 (8)</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0CooooldWind-%E7%9A%84%E8%AF%95%E7%82%BC%E5%8E%86%E7%A8%8B"><span class="nav-text">欢迎来到CooooldWind_的试炼历程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E9%87%8C%E6%98%AFP8813%E7%9A%84%E9%A2%98%E8%A7%A3"><span class="nav-text">这里是P8813的题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%94%E6%A1%88"><span class="nav-text">答案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A6%81%E7%82%B9"><span class="nav-text">要点</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0CooooldWind-%E7%9A%84%E8%AF%95%E7%82%BC%E5%8E%86%E7%A8%8B"><span class="nav-text">欢迎来到CooooldWind_的试炼历程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E9%87%8C%E6%98%AFP8813%E7%9A%84%E9%A2%98%E8%A7%A3"><span class="nav-text">这里是P8813的题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%94%E6%A1%88"><span class="nav-text">答案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A6%81%E7%82%B9"><span class="nav-text">要点</span></a></li></ol></li></ol>
 
     </div>
 </div>
