@@ -18,12 +18,12 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8813 的题解思路模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻 答案12345678910111213#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;">
+        <meta name="description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8813的题解思路模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻 答案12345678910111213#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CooooldWind_の试炼历程 (8)">
 <meta property="og:url" content="http://cooooldwind.github.io/2023_10_14_Growing_8/index.html">
 <meta property="og:site_name" content="CooooldWind_的小站">
-<meta property="og:description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8813 的题解思路模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻 答案12345678910111213#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;">
+<meta property="og:description" content="欢迎来到CooooldWind_的试炼历程本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。 这里是P8813的题解思路模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻 答案12345678910111213#include&lt;bits&#x2F;stdc++.h&gt;using namespace std;i">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-14T06:45:00.000Z">
 <meta property="article:modified_time" content="2023-10-14T07:03:39.329Z">
@@ -75,7 +75,7 @@
     
     <script id="hexo-configurations">
     window.config = {"hostname":"cooooldwind.github.io","root":"/","language":"zh-CN"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"simple","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#F6A7BD","secondary":"#F1DF8C"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"CooooldWind_","subtitle":{"text":["欢迎你来到他的小站~"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":3000,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://github.com/Cooooldwind","zhihu":"https://www.zhihu.com/people/Cold_Wind","email":"3091868003@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"随机歌曲","artist":"岑鬼鬼的API","url":"https://api.cenguigui.cn/api/netease/?&type=mp3","cover":"https://api.cenguigui.cn/api/netease/?&type=song_name?&type=img"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.5.0","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"About":{"icon":"fa-regular fa-user","submenus":{"Github":"https://github.com/Cooooldwind","Blog":"https://cooooldwind.netlify.app/","Luogu":"https://www.luogu.com.cn/user/747369","Bilibili":"https://space.bilibili.com/399740284"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":null,"links":{"Tags":{"path":"/tags","icon":"fa-regular fa-tags"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/10/14 13:57:30"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"8px","image_alignment":"center","image_caption":false,"link_icon":false},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[]},"code_block":{"copy":true,"style":"simple","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":5,"mobile_limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#F6A7BD","secondary":"#F1DF8C"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":true,"percentage":false},"website_counter":{"url":"https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"CooooldWind_","subtitle":{"text":["欢迎你来到他的小站~"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":3000,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"links":{"github":"https://github.com/Cooooldwind","zhihu":"https://www.zhihu.com/people/Cold_Wind","email":"3091868003@qq.com"},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"随机歌曲","artist":"岑鬼鬼的API","url":"https://api.cenguigui.cn/api/netease/?&type=mp3","cover":"https://api.cenguigui.cn/api/netease/?&type=song_name?&type=img"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.5.0","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"About":{"icon":"fa-regular fa-user","submenus":{"Github":"https://github.com/Cooooldwind","Blog":"https://cooooldwind.netlify.app/","Luogu":"https://www.luogu.com.cn/user/747369","Bilibili":"https://space.bilibili.com/399740284"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"info","announcement":null,"links":{"Tags":{"path":"/tags","icon":"fa-regular fa-tags"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2023/10/14 13:57:30"};
     window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
     window.data = {"masonry":false};
   </script>
@@ -102,6 +102,8 @@
 
 <body>
 <div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
     
 
     
@@ -345,6 +347,14 @@
 
     
     
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>177 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 分钟</span>
+        </span>
     
     
         <span class="article-pv article-meta-item">
@@ -363,7 +373,7 @@
 
         <div class="article-content markdown-body">
             <h1 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h1><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
-<h2 id="这里是P8813的题解"><a href="#这里是P8813的题解" class="headerlink" title="这里是P8813的题解"></a>这里是<a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8813" >P8813 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>的题解</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻</p>
+<h2 id="这里是P8813的题解"><a href="#这里是P8813的题解" class="headerlink" title="这里是P8813的题解"></a>这里是<a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8813" >P8813</a>的题解</h2><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>模拟。有手题，不知道为什么会有人想用快速幂…（蒟蒻</p>
 <h3 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="type">long</span> <span class="type">long</span> a,b,c = <span class="number">1</span>; cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; b;i++)</span><br><span class="line">		<span class="keyword">if</span>(c &gt; <span class="number">1000000000</span>)&#123;</span><br><span class="line">			cout &lt;&lt; <span class="number">-1</span>;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> c *= a;</span><br><span class="line">	cout &lt;&lt; c;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 <h3 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h3><h4 id="1：开long-long"><a href="#1：开long-long" class="headerlink" title="#1：开long long"></a>#1：开long long</h4><p>long long防爆的，最大是$2^6$$^4$。</p>
 <h4 id="2：for里面加if"><a href="#2：for里面加if" class="headerlink" title="#2：for里面加if"></a>#2：for里面加if</h4><p>同样防爆。</p>
@@ -509,7 +519,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">CooooldWind_の试炼历程 (8)</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0CooooldWind-%E7%9A%84%E8%AF%95%E7%82%BC%E5%8E%86%E7%A8%8B"><span class="nav-text">欢迎来到CooooldWind_的试炼历程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E9%87%8C%E6%98%AFP8813%E7%9A%84%E9%A2%98%E8%A7%A3"><span class="nav-text">这里是P8813 的题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%94%E6%A1%88"><span class="nav-text">答案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A6%81%E7%82%B9"><span class="nav-text">要点</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0CooooldWind-%E7%9A%84%E8%AF%95%E7%82%BC%E5%8E%86%E7%A8%8B"><span class="nav-text">欢迎来到CooooldWind_的试炼历程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99%E9%87%8C%E6%98%AFP8813%E7%9A%84%E9%A2%98%E8%A7%A3"><span class="nav-text">这里是P8813的题解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AD%94%E6%A1%88"><span class="nav-text">答案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A6%81%E7%82%B9"><span class="nav-text">要点</span></a></li></ol></li></ol></li></ol>
 
     </div>
 </div>
@@ -640,6 +650,10 @@
         
 
         
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="fa-regular fa-arrow-up"></i>
+            </li>
+        
 
         <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
             <i class="fa-regular fa-arrow-down"></i>
@@ -650,11 +664,6 @@
         <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
             <i class="fa-regular fa-cog fa-spin"></i>
         </li>
-        
-            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
         
         
     </ul>
