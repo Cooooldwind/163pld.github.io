@@ -97,7 +97,119 @@
     
     
     
-<meta name="generator" content="Hexo 6.3.0"></head>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -364,7 +476,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>360 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>343 字</span>
         </span>
     
     
@@ -389,13 +501,13 @@
 
         <div class="article-content markdown-body">
             <h2 id="欢迎来到CooooldWind-的试炼历程"><a href="#欢迎来到CooooldWind-的试炼历程" class="headerlink" title="欢迎来到CooooldWind_的试炼历程"></a>欢迎来到CooooldWind_的试炼历程</h2><p>本系列主要是讲自己在平常做题的时候的一些小花絮，但是已经托更很久了，趁着刚搞好GitHub Pages，今天把之前的都推下（外传就算了吧）。</p>
-<h2 id="是的我又来了（"><a href="#是的我又来了（" class="headerlink" title="是的我又来了（"></a>是的我又来了（</h2><p>这里是<a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1394" >P1394</a>的题解。</p>
+<h2 id="是的我又来了（"><a href="#是的我又来了（" class="headerlink" title="是的我又来了（"></a>是的我又来了（</h2><p>这里是<a class="link" target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1394">P1394</a>的题解。</p>
 <p>当时做这题主要是因为是fj的（自豪</p>
-<h6 id="广告：博客食用更香"><a href="#广告：博客食用更香" class="headerlink" title="广告：博客食用更香"></a>广告：<a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/747369/ColdWind-Growing-4" >博客食用更香</a></h6><hr>
+<h6 id="广告：博客食用更香"><a href="#广告：博客食用更香" class="headerlink" title="广告：博客食用更香"></a>广告：<a class="link" target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/747369/ColdWind-Growing-4">博客食用更香</a></h6><hr>
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>输入并判断这水怎么流的，然后一个个去查能不能到就好了。</p>
 <p>那就打个三重循环？？？</p>
 <p><strong>为什么打三重循环</strong>：有水能从不是起点的地方流到自己那里去（比如起点在8,8到5有路，5到3有路，那么8，5，3都有水）</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m,h[<span class="number">500</span>],road[<span class="number">500</span>][<span class="number">500</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) cin &gt;&gt; h[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; m;i++)&#123;</span><br><span class="line">		<span class="type">int</span> f,t;</span><br><span class="line">		cin &gt;&gt; f &gt;&gt; t;</span><br><span class="line">                <span class="comment">//高处？低处？</span></span><br><span class="line">		<span class="keyword">if</span>(h[f] &gt; h[t]) road[f][t] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(h[t] &gt; h[f]) road[t][f] = <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++)&#123;</span><br><span class="line">		road[i][i] = <span class="number">1</span>;<span class="comment">//水在自己家</span></span><br><span class="line">		<span class="type">int</span> judge = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>;j &lt;= n;j++)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">1</span>;k &lt;= n;k++)&#123;</span><br><span class="line">				<span class="keyword">if</span>(road[k][j])&#123;<span class="comment">//有路，则为1</span></span><br><span class="line">					judge++;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;		</span><br><span class="line">		<span class="keyword">if</span>(judge == n)&#123;</span><br><span class="line">			cout &lt;&lt; <span class="string">&quot;Oui, j&#x27;ai trouve la solution.&quot;</span> &lt;&lt; endl &lt;&lt; i;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		road[i][i] = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;Non&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m,h[<span class="number">500</span>],road[<span class="number">500</span>][<span class="number">500</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>{</span><br><span class="line">	cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++) cin &gt;&gt; h[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i &lt; m;i++){</span><br><span class="line">		<span class="type">int</span> f,t;</span><br><span class="line">		cin &gt;&gt; f &gt;&gt; t;</span><br><span class="line">                <span class="comment">//高处？低处？</span></span><br><span class="line">		<span class="keyword">if</span>(h[f] &gt; h[t]) road[f][t] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(h[t] &gt; h[f]) road[t][f] = <span class="number">1</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= n;i++){</span><br><span class="line">		road[i][i] = <span class="number">1</span>;<span class="comment">//水在自己家</span></span><br><span class="line">		<span class="type">int</span> judge = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>;j &lt;= n;j++)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">1</span>;k &lt;= n;k++){</span><br><span class="line">				<span class="keyword">if</span>(road[k][j]){<span class="comment">//有路，则为1</span></span><br><span class="line">					judge++;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				}</span><br><span class="line">			}		</span><br><span class="line">		<span class="keyword">if</span>(judge == n){</span><br><span class="line">			cout &lt;&lt; <span class="string">"Oui, j'ai trouve la solution."</span> &lt;&lt; endl &lt;&lt; i;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		}</span><br><span class="line">		road[i][i] = <span class="number">0</span>;</span><br><span class="line">	}</span><br><span class="line">	cout &lt;&lt; <span class="string">"Non"</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
         </div>
 
         
@@ -468,10 +580,10 @@
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2023_10_14_Growing_6/"
+                        href="/2023_10_14_Growing_5/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">CooooldWind_の试炼历程 (6)</span>
+                                <span class="post-nav-title-item">CooooldWind_の试炼历程 (5)</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
