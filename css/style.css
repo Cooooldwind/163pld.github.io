@@ -4584,7 +4584,7 @@ html.is-animating .scroll-progress-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, rgba(105,169,255,0.576) 0%, rgba(233,208,116,0.576) 100%);
+  background: linear-gradient(120deg, rgba(80,155,255,0.439) 0%, rgba(150,192,250,0.439) 100%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding-top: 2px;
